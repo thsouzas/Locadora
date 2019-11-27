@@ -89,7 +89,7 @@ public class CadastrarFuncionario extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Login:");
+        jLabel5.setText("Senha:");
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
