@@ -10,7 +10,13 @@ package Modelo;
  * @author F. Bruno Santana
  */
 public class Filme extends javax.swing.JFrame {
-
+    private int codigo;
+    private String titulo;
+    private int ano;
+    private String duracao;
+    private int cod_categoria;
+    private int cod_classificacao;
+    private String capa;
     /**
      * Creates new form Filme
      */

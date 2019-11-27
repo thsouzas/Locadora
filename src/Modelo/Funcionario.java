@@ -10,7 +10,10 @@ package Modelo;
  * @author F. Bruno Santana
  */
 public class Funcionario extends javax.swing.JFrame {
-
+    private int cod;
+    private String nome;
+    private String login;
+    private String senha;
     /**
      * Creates new form Funcionario
      */

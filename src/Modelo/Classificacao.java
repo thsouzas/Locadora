@@ -10,7 +10,9 @@ package Modelo;
  * @author F. Bruno Santana
  */
 public class Classificacao extends javax.swing.JFrame {
-
+    private int codigo;
+    private String nome;
+    private double preco;
     /**
      * Creates new form Classificacao
      */

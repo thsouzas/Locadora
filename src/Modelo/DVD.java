@@ -10,7 +10,11 @@ package Modelo;
  * @author F. Bruno Santana
  */
 public class DVD extends javax.swing.JFrame {
-
+    private int codigo;
+    private int cod_filme;
+    private String situacao;
+    private double preco;
+    private String data_compra;
     /**
      * Creates new form DVD
      */

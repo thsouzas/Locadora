@@ -10,7 +10,8 @@ package Modelo;
  * @author F. Bruno Santana
  */
 public class Categoria extends javax.swing.JFrame {
-
+    private int codigo;
+    private String nome;
     /**
      * Creates new form Categoria
      */

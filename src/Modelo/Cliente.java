@@ -10,7 +10,18 @@ package Modelo;
  * @author F. Bruno Santana
  */
 public class Cliente extends javax.swing.JFrame {
-
+    private int Codigo;
+    private String Nome;
+    private String Nascicmento;
+    private String RG;
+    private String CPF;
+    private String Telefone;
+    private String Email;
+    private String Bairro;
+    private String Rua;
+    private int Numero;
+    private String CEP;
+    
     /**
      * Creates new form Cliente
      */
