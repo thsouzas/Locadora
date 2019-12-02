@@ -12,9 +12,27 @@ package Modelo;
 public class Categoria extends javax.swing.JFrame {
     private int codigo;
     private String nome;
+
+    
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
     /**
      * Creates new form Categoria
      */
+    public void setNome(String nome) {    
+        this.nome = nome;
+    }
+
     public Categoria() {
         initComponents();
     }
