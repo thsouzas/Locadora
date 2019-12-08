@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DAO;
+package Principal;
 
 /**
  *
  * @author cliente
  */
-public class DVDDAO {
+class jProgressBar {
+
+    static void setValue(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

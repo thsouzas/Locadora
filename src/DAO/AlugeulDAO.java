@@ -9,6 +9,6 @@ package DAO;
  *
  * @author cliente
  */
-public class DVDDAO {
+public class AlugeulDAO {
     
 }

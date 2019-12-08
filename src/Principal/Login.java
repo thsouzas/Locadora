@@ -1,8 +1,12 @@
 package Principal;
 
-import DAO.Conexao;
+import DAO.ConexaoDAO;
 import DAO.FuncionarioDAO;
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -82,10 +86,46 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Connection con = Conexao.AbrirConexao();
+        Connection con = ConexaoDAO.AbrirConexao();
         FuncionarioDAO sql = new FuncionarioDAO(con);
         String login = tfUsuario.getText();
         String senha = pfSenha.getText();
+        if (login.equalsIgnoreCase("") ||  senha.equalsIgnoreCase("")){
+          JOptionPane.showMessageDialog (null, "Nenhum campo pode esta Vazio", "Video Locadora", JOptionPane.WARNING_MESSAGE);
+           tfUsuario.setText("");
+           pfSenha.setText("");
+        
+        } else {
+            try {
+                if (sql.Logar(login, senha)== true) {
+                    new Thread(){
+                        public void run(){
+                            for (int i = 0; i < 101; i++){
+                                jProgressBar.setValue(i);
+                                try{
+                                    Thread.sleep(35);
+                                    
+                                } catch (Exception e){
+                                    e.getMessage();
+                                    
+                                }
+                                
+                            }
+                            new Menu().setVisible(true);
+                            dispose();
+                            
+                        }
+                    }.start();
+                            } else {
+                    JOptionPane.showMessageDialog(null, "Usuario ou Senha Invalidos",
+                            "Video Locadora", JOptionPane.ERROR_MESSAGE);
+                     tfUsuario.setText("");
+                     pfSenha.setText("");
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
