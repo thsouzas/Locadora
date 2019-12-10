@@ -5,10 +5,16 @@
  */
 package DAO;
 
+import java.sql.Connection;
+
 /**
  *
  * @author cliente
  */
-public class CategoriaDAO {
+public class CategoriaDAO extends ExecuteSQL{
+    
+    public CategoriaDAO(Connection con) {
+        super(con);
+    }
     
 }

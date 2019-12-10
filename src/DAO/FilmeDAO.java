@@ -5,10 +5,16 @@
  */
 package DAO;
 
+import java.sql.Connection;
+
 /**
  *
  * @author cliente
  */
-public class FilmeDAO {
+public class FilmeDAO extends ExecuteSQL{
+    
+    public FilmeDAO(Connection con) {
+        super(con);
+    }
     
 }

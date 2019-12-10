@@ -5,10 +5,16 @@
  */
 package DAO;
 
+import java.sql.Connection;
+
 /**
  *
  * @author cliente
  */
-public class DVDDAO {
+public class DVDDAO extends ExecuteSQL{
+    
+    public DVDDAO(Connection con) {
+        super(con);
+    }
     
 }

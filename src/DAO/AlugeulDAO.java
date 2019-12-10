@@ -5,10 +5,16 @@
  */
 package DAO;
 
+import java.sql.Connection;
+
 /**
  *
  * @author cliente
  */
-public class AlugeulDAO {
+public class AlugeulDAO extends ExecuteSQL{
+    
+    public AlugeulDAO(Connection con) {
+        super(con);
+    }
     
 }
