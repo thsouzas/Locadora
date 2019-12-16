@@ -1,25 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
- import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- *
- * @author F. Bruno Santana
- */
-public class Listar extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Listar
-     * @return 
-     * @throws java.sql.SQLException
-     */
+public class Listar {
     
+    static private int coddvd;
+    static private int codaluguel;
+    static private int codcliente;
+
+    public static int getCoddvd() {
+        return coddvd;
+    }
+
+    
+    public static void setCoddvd(int aCoddvd) {
+        coddvd = aCoddvd;
+    }
+
+    
+    public static int getCodaluguel() {
+        return codaluguel;
+    }
+
+   
+    public static void setCodaluguel(int aCodaluguel) {
+        codaluguel = aCodaluguel;
+    }
+
+   
+    public static int getCodcliente() {
+        return codcliente;
+    }
+
+    
+    public static void setCodcliente(int aCodcliente) {
+        codcliente = aCodcliente;
+    }
+    
+}

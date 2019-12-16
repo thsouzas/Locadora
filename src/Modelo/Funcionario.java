@@ -1,15 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
-/**
- *
- * @author cliente
- */
-public class Funcionario extends javax.swing.JFrame {
+public class Funcionario {
     private int cod;
     private String nome;
     private String login;
@@ -24,6 +16,7 @@ public class Funcionario extends javax.swing.JFrame {
         this.cod = cod;
     }
 
+   
     public String getNome() {
         return nome;
     }
@@ -32,6 +25,7 @@ public class Funcionario extends javax.swing.JFrame {
         this.nome = nome;
     }
 
+   
     public String getLogin() {
         return login;
     }
@@ -44,10 +38,8 @@ public class Funcionario extends javax.swing.JFrame {
         return senha;
     }
 
-    /**
-     * Creates new form Funcionario
-     */
-    public void setSenha(String senha) {    
+   
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 }

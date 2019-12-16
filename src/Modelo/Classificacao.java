@@ -1,20 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
-/**
- *
- * @author cliente
- */
-public class Classificacao extends javax.swing.JFrame{
+
+public class Classificacao {
+    
     private int codigo;
     private String nome;
-    private double preco;
+    private String preco;
 
-    
+   
     public int getCodigo() {
         return codigo;
     }
@@ -27,18 +21,18 @@ public class Classificacao extends javax.swing.JFrame{
         return nome;
     }
 
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public double getPreco() {
+   
+    public String getPreco() {
         return preco;
     }
 
-    /**
-     * Creates new form Classificacao
-     */
-    public void setPreco(double preco) {    
+    
+    public void setPreco(String preco) {
         this.preco = preco;
     }
 }

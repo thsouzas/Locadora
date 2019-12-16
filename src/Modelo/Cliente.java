@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
-/**
- *
- * @author cliente
- */
-    public class Cliente extends javax.swing.JFrame {
+public class Cliente {
     private int Codigo;
     private String Nome;
-    private String Nascicmento;
+    private String Nascimento;
     private String RG;
     private String CPF;
     private String Telefone;
@@ -38,12 +30,12 @@ package Modelo;
         this.Nome = Nome;
     }
 
-    public String getNascicmento() {
-        return Nascicmento;
+    public String getNascimento() {
+        return Nascimento;
     }
 
-    public void setNascicmento(String Nascicmento) {
-        this.Nascicmento = Nascicmento;
+    public void setNascimento(String Nascimento) {
+        this.Nascimento = Nascimento;
     }
 
     public String getRG() {
@@ -109,5 +101,4 @@ package Modelo;
     public void setCEP(String CEP) {
         this.CEP = CEP;
     }
-    
-    }
+}

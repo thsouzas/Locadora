@@ -1,15 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
-/**
- *
- * @author cliente
- */
-    public class Filme extends javax.swing.JFrame {
+public class Filme {
     private int codigo;
     private String titulo;
     private int ano;
@@ -18,7 +10,6 @@ package Modelo;
     private int cod_classificacao;
     private String capa;
 
-    
     public int getCodigo() {
         return codigo;
     }
@@ -71,10 +62,9 @@ package Modelo;
         return capa;
     }
 
-    /**
-     * Creates new form Filme
-     */
-    public void setCapa(String capa) {    
+    public void setCapa(String capa) {
         this.capa = capa;
     }
-    }
+    
+    
+}

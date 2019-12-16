@@ -1,22 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
-/**
- *
- * @author cliente
- */
-public class DVD extends javax.swing.JFrame {
+
+public class DVD {
     private int codigo;
     private int cod_filme;
     private String situacao;
     private double preco;
     private String data_compra;
 
-    
     public int getCodigo() {
         return codigo;
     }
@@ -53,10 +45,8 @@ public class DVD extends javax.swing.JFrame {
         return data_compra;
     }
 
-    /**
-     * Creates new form DVD
-     */
-    public void setData_compra(String data_compra) {    
-        this.data_compra = data_compra;
-    }  
+    public void setData_Compra(String data_nasc) {
+        this.data_compra = data_nasc;
+    }
+    
 }
